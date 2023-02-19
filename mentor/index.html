@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .col-md-3{
+    margin-top: 15px !important;
+  }
+
+ 
+}
+        /*--accordian---*/
+
+        .accordion .card-header:after {
+            font-family: 'FontAwesome';
+            content: "\f068";
+            float: right;
+        }
+
+        .accordion .card-header.collapsed:after {
+            /* symbol for "collapsed" panels */
+            content: "\f067";
+        }
+
+        /*--------end accordian-----------*/
+
+
+        .rediud {
+
+            border-radius: 30px;
+
+        }
+
+        .tech {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 4px solid orange;
+            margin-top: -60px;
+            margin-left: 70px;
+        }
+
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .navbar {
+            font-weight: 500;
+        }
+
+        .row {
+            margin: 0% !important;
+            padding: 0% !important;
+        }
+
+        .exp{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+
+
+        .nav-link {
+            padding-left: 20px;
+        }
+
+        ul {
+            margin-left: 100px;
+        }
+
+        p {
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: silver;
+            border: none;
+
+        }
+
+        .cours1 {
+            display: flex;
+            float: left;
+        }
+
+        .course2 {
+            display: flex;
+            float: right !important;
+        }
+
+        .btn {
+            margin-right: 20px;
+        }
+
+        h5 {
+            margin-left: 20px;
+        }
+
+        hr {
+            margin-left: 20px;
+        }
+
+        .peop {
+
+            margin-left: 20px;
+        }
+
+        .apply {
+            background-color: pink;
+            color: white;
+        }
+
+        ul li {
+
+            list-style: none;
+
+        }
+
+        .fline {
+            margin-left: -20px;
+            border: 1px solid rgb(240, 233, 233);
+        }
+
+        /*-------===========================================card slider===============================----*/
+
+        @media (max-width: 768px) {
+            .carousel-inner .carousel-item>div {
+                display: none;
+            }
+
+            .carousel-inner .carousel-item>div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* display 3 */
+        @media (min-width: 768px) {
+
+            .carousel-inner .carousel-item-right.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(33.333%);
+            }
+
+            .carousel-inner .carousel-item-left.active,
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-33.333%);
+            }
+        }
+
+        .carousel-inner .carousel-item-right,
+        .carousel-inner .carousel-item-left {
+            transform: translateX(0);
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!----=============================================navbar==============================================----->
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white  ">
+            <a class="navbar-brand" href="#">
+                <img src="imase/mentor3.png" alt="" style="height: 50px; width: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Find a mentor <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Gold Bade mentorship <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Program & course<span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Live session <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Job Gurentee <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Hire from Us <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Comunity <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0" style="padding-right:50px">
+                    <i class="fa fa-bell bg-light icon"
+                        style="font-size:20px; padding-right:30px ; padding: 10px 9px; margin-right: 10px; "></i>
+                    <button class="  icon" type="submit">HD</button>
+                    <i class="fa fa-angle-down" style="font-size:26px"></i>
+
+                </form>
+            </div>
+        </nav>
+    </section>
+    <!-----==================================banner=================================----------->
+    <section class="bg-light">
+        <div class="contaniner-fluid">
+            <div class="row" style="">
+                <div class="col-md-6 " style="margin: auto; padding: 50px;">
+                    <h2>LIVE Secion</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid tempore eligendi nulla
+                        deleniti doloremque tempora aliquam esse ullam voluptates.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="imase/mentor.png" alt="" class="src" style="width:100% !important; margin-left: 15px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---================================course upper ==========================================--->
+    <section class="bg-white">
+        <h2 style="margin: 20px 35px;">OUR COURSE</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cours1">
+                    <div class="content">
+                        <h5>Free session</h5>
+                        <hr style="width: 120px;  border: 2px solid pink ; ">
+                    </div>
+                    <div class="content">
+                        <h5>Paid session</h5>
+                        <hr style="width: 120px;  border: 2px solid rgb(170, 166, 167) ; ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="course2">
+                    <div class="content">
+                        <button class="btn  exp my-2 my-sm-0 btn1" type="submit">Explore All</button>
+                    </div>
+                    <div class="content">
+                        <button class="btn btn-outline-success my-2 my-sm-0" href="#recipeCarousel" data-slide="prev"
+                            type="submit">→</button>
+                    </div>
+                    <div class="content">
+                        <button class="btn btn-outline-success my-2 my-sm-0" href="#recipeCarousel" data-slide="next"
+                            type="submit">←</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---=================================course lower==========================================--->
+    <section class="bg-white">
+        <div class="container-fluid">
+            <div class="row mx-auto my-auto">
+                <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card ">
+                                    <img class="img-fluid" src="imase/mentor3.jpg">
+                                </div>
+                                <h5 class="tetx-center"> Full Stack Devlopment Couurse....</h5>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-people peop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                                </svg>
+                                <h6 style="margin-left: 50px; margin-top: -25px;">Profectionals</h6>
+                                <button class="btn  my-4 mx-3 my-sm-0 apply" type="submit">Explore All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----====================================banner2===========================================------>
+
+    <section class="bg-white">
+
+        <h2 class="text-center" style="padding: 60px; font-family: inherit;">Why Live Session</h2>
+        <h4 class="text-center" style="margin-top:-50px; font-family: inherit;">Lorem ipsum, dolor sit amet consectetur
+            <br> adipisicing elit. Nihil ipsam,
+        </h4>
+        <img src="imase/mentor2.png" alt="" class="src" style="width: 100%;">
+    </section>
+
+    <!-----==============================================mentor section==============================================----->
+    <section class="bg-white">
+        <div class="container-fluid">
+            <h2 class="text-center" style="padding: 60px; font-family: inherit;">Our Mentors</h2>
+            <h4 class="text-center" style="margin-top:-50px; font-family: inherit;">Lorem ipsum, dolor sit amet
+                consectetur adipisicing<br> elit. Nihil ipsam, </h4>
+
+            <div class="row mt-4">
+                <div class="col-md-3 ">
+                    <div class=" card shadow-lg  bg-white " style="border-radius: 20px;">
+                        <img src="imase/teach1.png" alt="" class="src" style="padding: 50px;">
+                        <h5 style="margin-top: -30px;">Ashish Kharee</h5>
+                        <p style="margin-left: 20px; font-family: revert;
+                    font-size: 12px;">Entherpeniur Hr Cunsultant</p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 ">
+                    <div class=" card shadow-lg  bg-white  " style="border-radius: 20px;">
+                        <img src="imase/teach2.png" alt="" class="src" style="padding: 50px;">
+                        <h5 style="margin-top: -30px;">Ashish Kharee</h5>
+                        <p style="margin-left: 20px; font-family: revert;
+                    font-size: 12px;">Entherpeniur Hr Cunsultant</p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 ">
+                    <div class=" card shadow-lg  bg-white  " style="border-radius: 20px;">
+                        <img src="imase/teach1.png" alt="" class="src" style="padding: 50px;">
+                        <h5 style="margin-top: -30px;">Ashish Kharee</h5>
+                        <p style="margin-left: 20px; font-family: revert;
+                    font-size: 12px;">Entherpeniur Hr Cunsultant</p>
+
+                    </div>
+
+                </div>
+                <div class="col-md-3 ">
+                    <div class=" card shadow-lg  bg-white " style="border-radius: 20px;">
+                        <img src="imase/teach3.png" alt="" class="src" style="padding: 50px;">
+                        <h5 style="margin-top: -30px;">Ashish Kharee</h5>
+                        <p style="margin-left: 20px; font-family: revert;
+                    font-size: 12px;">Entherpeniur Hr Cunsultant</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!---====================================client section========================================-->
+
+
+    <section class="bg-white">
+        <div class="container-fluid">
+            <h3 class="text-center" style="padding: 60px; font-family: inherit; font-weight: bold;">Don't Take our Word
+                For It</h3>
+            <h3 class="text-center" style="margin-top:-50px; font-family: inherit; color: orange; ">Lorem ipsum, dolor
+                sit amet consectetur </h3>
+
+            <div class="row mt-5">
+                <div class="col-md-3 mt-5">
+                    <div class="card bg-light" style="border-radius: 15px;">
+                        <img src="imase/teach1.png" alt="" class="tech">
+                        <p class="text-center" style="text-align: justify; padding: 10px 12px;">Lorem consectetur
+                            adipisicing elit. Reprehenderit minima exercitationem nihil</p>
+
+                        <img src="imase/l1.jpg" alt="" class="src"
+                            style="width: 70px; height:40px; margin-top: -20px; margin-left:125px; margin-bottom: 20px;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <div class="card bg-light" style="border-radius: 15px;">
+                        <img src="imase/teach2.png" alt="" class="tech">
+                        <p class="text-center" style="text-align: justify; padding: 10px 12px;">Lorem consectetur
+                            adipisicing elit. Reprehenderit minima exercitationem nihil</p>
+
+                        <img src="imase/l2.jpg" alt="" class="src"
+                            style="width: 70px; height:40px; margin-top: -20px; margin-left:125px; margin-bottom: 20px;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <div class="card bg-light" style="border-radius: 15px;">
+                        <img src="imase/teach3.png" alt="" class="tech">
+                        <p class="text-center" style="text-align: justify; padding: 10px 12px;">Lorem consectetur
+                            adipisicing elit. Reprehenderit minima </p>
+
+                        <img src="imase/l3.jpg" alt="" class="src"
+                            style="width: 70px; height:50px; margin-top: -20px; margin-left:125px; margin-bottom: 20px;">
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <div class="card bg-light" style="border-radius: 15px;">
+                        <img src="imase/teach1.png" alt="" class="tech">
+                        <p class="text-center" style="text-align: justify; padding: 10px 12px;">Lorem consectetur
+                            adipisicing elit. Reprehenderit minima exercitationem nihil</p>
+
+                        <img src="imase/l1.jpg" alt="" class="src"
+                            style="width: 70px; height:40px; margin-top: -20px; margin-left:125px; margin-bottom: 20px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!---================================faq section==================================-->
+
+    <section class="bg-white mt-4">
+        <div class="container-fluid" style="padding: 20px 30px;">
+            <h2>Friquently Asked Questions(FAQS)</h2>
+        </div>
+
+
+        <div class="container-fluid">
+            <div id="accordion" class="accordion">
+                <div class="card mb-0">
+                    <div class="card-header collapsed mt-3" data-toggle="collapse" href="#collapseOne">
+                        <a class="card-title"> Anim pariatur cliche reprehenderit, enim eiusmod </a>
+                    </div>
+                    <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                    </div>
+                    <div class="card-header collapsed mt-3" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseTwo">
+                        <a class="card-title"> Anim pariatur cliche reprehenderit, enim eiusmod </a>
+                    </div>
+                    <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS. </p>
+                    </div>
+                    <div class="card-header collapsed mt-3" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapseThree">
+                        <a class="card-title"> Anim pariatur cliche reprehenderit, enim eiusmod</a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                            terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                            Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                            bird on it squid single-origin coffee nulla assumenda shoreditch et. samus labore
+                            sustainable VHS. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---========================================footer=========================================--->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <ul style="margin-left: -50px;">
+                        <li>
+                            <img src="imase/flogo.jpg" alt="" class="src"
+                                style="width:170px; height: 40px; list-decoration: none !important;">
+                        </li>
+                        <li class="mt-2">
+                            <p>For any Query<br> Please contacr with Us</p>
+                        </li>
+
+                        <li style="margin-top: -10px;"><u><a href=""
+                                    style="color: white; ">suport@mentorcart.com</a></u></li>
+                        <li class="mt-2">
+                            <p>+91 76785872133</p>
+                        </li>
+                    </ul>
+
+                    <ul style="margin-left: -50px;">
+                        <i class="fa fa-facebook bg-light icon"
+                            style="font-size:20px;  color :black; padding: 10px 12px; margin-right: 10px; "></i>
+                        <i class="fa fa-twitter bg-light icon"
+                            style="font-size:20px;  color :black; padding: 10px 10px; margin-right: 10px; "></i>
+
+                        <i class="fa fa-linkedin bg-light icon"
+                            style="font-size:20px;  color :black; padding: 10px 11px; margin-right: 10px; "></i>
+                        <i class="fa fa-youtube bg-light icon"
+                            style="font-size:20px;  color :black; padding: 10px 11px; margin-right: 10px; "></i>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <ul style="margin-left: 0px; margin-top: -12px;">
+                        <li style="font-size: 30px; font-weight: bold; color: white;">service</li>
+                        <li style="margin-top: 15px;">find a mentor </li>
+                        <li style="margin-top: 15px;"> Become a mento</li>
+                        <li style="margin-top: 15px;">Live class</li>
+                        <li style="margin-top: 15px;"> doubt suport</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <ul style="margin-left: 0px; margin-top: -12px;">
+                        <li style="font-size: 30px; font-weight: bold; color: white;">Companies</li>
+                        <li style="margin-top: 15px;">find a mentor </li>
+                        <li style="margin-top: 15px;"> Become a mento</li>
+                        <li style="margin-top: 15px;">Live class</li>
+                        <li style="margin-top: 15px;"> doubt suport</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mt-5">
+                    <ul style="margin-left: 0px; margin-top: -12px;">
+                        <li style="font-size: 30px; font-weight: bold; color: white;">More</li>
+                        <li style="margin-top: 15px;">find a mentor </li>
+                        <li style="margin-top: 15px;"> Become a mento</li>
+                        <li style="margin-top: 15px;">Live class</li>
+                        <li style="margin-top: 15px;"> doubt suport</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="fline">
+            <div class="row">
+                <div class="col-md-6">
+
+                    &copy;2022 kishor tecch solution pvt.ltd
+                </div>
+
+                <div class="col-md-6">
+                    <ul style="display: flex; ">
+                        <li style="padding-left: 16px;">terms & service</li>
+                        <li style="padding-left: 16px;">Privacy policy</li>
+                        <li style="padding-left: 16px;">refundable policy</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <script>
+        $('#recipeCarousel').carousel({
+            interval: 10000
+        })
+
+        $('.carousel .carousel-item').each(function () {
+            var minPerSlide = 3;
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i = 0; i < minPerSlide; i++) {
+                next = next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
